@@ -32,9 +32,8 @@ class _LoginScreenState extends State<LoginScreen> {
     });
     String res = await AuthServiceView().loginUser(email: emailCtrl.text, password: psCtrl.text);
     if(res == "Success"){
-      setState(() {
+
         Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=> Homepage()));
-      });
     }else{
       setState(() {
         isLoading = false;
@@ -121,9 +120,10 @@ class _LoginScreenState extends State<LoginScreen> {
                     ));
                   },
                   child: Text(" Signup",style: TextStyle(
-                    fontSize: 15,
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold
+                    fontSize: 22,
+                    color: Colors.blue,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'Signatra'
                   ),),
                 )
               ],

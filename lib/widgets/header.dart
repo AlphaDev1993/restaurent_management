@@ -9,7 +9,9 @@ AppBar appBar(context,{bool isAppleTitle = false, String titleText="",bool remov
   automaticallyImplyLeading: removeBackBtn ? false : true,
     title: Text(isAppleTitle ? "Restaurent" : titleText ,style: TextStyle(
       color: Colors.white,
-      fontSize: isAppleTitle ? 40 : 19
+      fontSize: isAppleTitle ? 40 : 30,
+      fontFamily: 'Signatra',
+      fontWeight: FontWeight.bold
     ),
 
 
